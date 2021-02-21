@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstring>
+#include <cctype>
+using namespace std;
+
+int main() {
+  int a, b;
+  char user[a];
+  char fresh[b];
+  cin.get(user, 80);
+  cout << "xddd" << user <<endl;
+  
+  
+  for(a = 0; a<=strlen(user); a++) {
+    if((user[a] != ' ') && (ispunct(user[a]) == false)) {
+	fresh[b] = tolower(user[a]);
+    }//if statement
+    cout<<fresh<<endl;
+  } // for loop
+
+
+}//int main
